@@ -13,6 +13,7 @@ Download Xcode from [Apple's developer website](https://developer.apple.com/xcod
 Clone the repository by executing the following command from the command line.
 
 ```bash
+git clone https://github.com/ahmedmadian/CocoaCasts.git
 ```
 
 ### Step 3: Install Dependencies
