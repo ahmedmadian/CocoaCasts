@@ -5,7 +5,7 @@ def wrappers
 end
 
 def development
-   pod 'Reveal-SDK', configurations: ['Debug']
+   pod 'Reveal-SDK', configurations: ['Debug/Staging', 'Debug/Production']
 end
 
 

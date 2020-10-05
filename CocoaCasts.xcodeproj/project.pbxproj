@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D599FCF406088F54457D13D4 /* Pods_CocoaCasts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E164963FC659AD3F1833B7D /* Pods_CocoaCasts.framework */; };
+		DE2739EA252B2F5C0026D12B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2739E9252B2F5C0026D12B /* Configuration.swift */; };
+		DE2739EC252B30CF0026D12B /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2739EB252B30CF0026D12B /* Enviroment.swift */; };
 		DE6C6BA12529E11A00A71C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C6BA02529E11A00A71C9F /* AppDelegate.swift */; };
 		DE6C6BA32529E11A00A71C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C6BA22529E11A00A71C9F /* SceneDelegate.swift */; };
 		DE6C6BA52529E11A00A71C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C6BA42529E11A00A71C9F /* ViewController.swift */; };
@@ -17,8 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		245441F4AA404A8B9ECA3C73 /* Pods-CocoaCasts.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.debug-production.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.debug-production.xcconfig"; sourceTree = "<group>"; };
 		2E164963FC659AD3F1833B7D /* Pods_CocoaCasts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaCasts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4633D98FEB5EC5E466BF15B /* Pods-CocoaCasts.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.debug-staging.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.debug-staging.xcconfig"; sourceTree = "<group>"; };
 		CFBFBCF5A1C6E142971F8031 /* Pods-CocoaCasts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.release.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.release.xcconfig"; sourceTree = "<group>"; };
+		DE2739E9252B2F5C0026D12B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DE2739EB252B30CF0026D12B /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		DE6C6B9D2529E11A00A71C9F /* CocoaCasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaCasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6C6BA02529E11A00A71C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE6C6BA22529E11A00A71C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		DE6C6BAC2529E11B00A71C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE6C6BAE2529E11B00A71C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E028EE9EA5944FDD4BD64FE0 /* Pods-CocoaCasts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.debug.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FB5FBC8FE49047A6DB4E0B /* Pods-CocoaCasts.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.release-staging.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.release-staging.xcconfig"; sourceTree = "<group>"; };
+		F44714EF3A1B5B48B1F31074 /* Pods-CocoaCasts.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaCasts.release-production.xcconfig"; path = "Target Support Files/Pods-CocoaCasts/Pods-CocoaCasts.release-production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +55,11 @@
 			children = (
 				E028EE9EA5944FDD4BD64FE0 /* Pods-CocoaCasts.debug.xcconfig */,
 				CFBFBCF5A1C6E142971F8031 /* Pods-CocoaCasts.release.xcconfig */,
+				A4633D98FEB5EC5E466BF15B /* Pods-CocoaCasts.debug-staging.xcconfig */,
+				245441F4AA404A8B9ECA3C73 /* Pods-CocoaCasts.debug-production.xcconfig */,
+				E0FB5FBC8FE49047A6DB4E0B /* Pods-CocoaCasts.release-staging.xcconfig */,
+				F44714EF3A1B5B48B1F31074 /* Pods-CocoaCasts.release-production.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,15 @@
 				2E164963FC659AD3F1833B7D /* Pods_CocoaCasts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2739E8252B2F480026D12B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DE2739E9252B2F5C0026D12B /* Configuration.swift */,
+				DE2739EB252B30CF0026D12B /* Enviroment.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		DE6C6B942529E11900A71C9F = {
@@ -81,6 +101,7 @@
 		DE6C6B9F2529E11A00A71C9F /* CocoaCasts */ = {
 			isa = PBXGroup;
 			children = (
+				DE2739E8252B2F480026D12B /* Configuration */,
 				DE6C6BB42529E12600A71C9F /* App Delegate */,
 				DE6C6BB62529E13B00A71C9F /* Modules */,
 				DE6C6BB52529E13300A71C9F /* Resources */,
@@ -241,6 +262,8 @@
 			files = (
 				DE6C6BA52529E11A00A71C9F /* ViewController.swift in Sources */,
 				DE6C6BA12529E11A00A71C9F /* AppDelegate.swift in Sources */,
+				DE2739EC252B30CF0026D12B /* Enviroment.swift in Sources */,
+				DE2739EA252B2F5C0026D12B /* Configuration.swift in Sources */,
 				DE6C6BA32529E11A00A71C9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +290,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DE6C6BAF2529E11B00A71C9F /* Debug */ = {
+		DE2739E4252B29830026D12B /* Debug/Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -325,9 +348,27 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Debug/Production;
 		};
-		DE6C6BB02529E11B00A71C9F /* Release */ = {
+		DE2739E5252B29830026D12B /* Debug/Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245441F4AA404A8B9ECA3C73 /* Pods-CocoaCasts.debug-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CocoaCasts/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madian.CocoaCasts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug/Production;
+		};
+		DE2739E6252B299B0026D12B /* Release/Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,11 +420,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Release/Production;
 		};
-		DE6C6BB22529E11B00A71C9F /* Debug */ = {
+		DE2739E7252B299B0026D12B /* Release/Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E028EE9EA5944FDD4BD64FE0 /* Pods-CocoaCasts.debug.xcconfig */;
+			baseConfigurationReference = F44714EF3A1B5B48B1F31074 /* Pods-CocoaCasts.release-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,11 +438,125 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release/Production;
 		};
-		DE6C6BB32529E11B00A71C9F /* Release */ = {
+		DE6C6BAF2529E11B00A71C9F /* Debug/Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFBFBCF5A1C6E142971F8031 /* Pods-CocoaCasts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug/Staging;
+		};
+		DE6C6BB02529E11B00A71C9F /* Release/Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release/Staging;
+		};
+		DE6C6BB22529E11B00A71C9F /* Debug/Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4633D98FEB5EC5E466BF15B /* Pods-CocoaCasts.debug-staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,7 +570,25 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Debug/Staging;
+		};
+		DE6C6BB32529E11B00A71C9F /* Release/Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FB5FBC8FE49047A6DB4E0B /* Pods-CocoaCasts.release-staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CocoaCasts/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madian.CocoaCasts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release/Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -423,20 +596,24 @@
 		DE6C6B982529E11900A71C9F /* Build configuration list for PBXProject "CocoaCasts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE6C6BAF2529E11B00A71C9F /* Debug */,
-				DE6C6BB02529E11B00A71C9F /* Release */,
+				DE6C6BAF2529E11B00A71C9F /* Debug/Staging */,
+				DE2739E4252B29830026D12B /* Debug/Production */,
+				DE6C6BB02529E11B00A71C9F /* Release/Staging */,
+				DE2739E6252B299B0026D12B /* Release/Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release/Staging;
 		};
 		DE6C6BB12529E11B00A71C9F /* Build configuration list for PBXNativeTarget "CocoaCasts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE6C6BB22529E11B00A71C9F /* Debug */,
-				DE6C6BB32529E11B00A71C9F /* Release */,
+				DE6C6BB22529E11B00A71C9F /* Debug/Staging */,
+				DE2739E5252B29830026D12B /* Debug/Production */,
+				DE6C6BB32529E11B00A71C9F /* Release/Staging */,
+				DE2739E7252B299B0026D12B /* Release/Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release/Staging;
 		};
 /* End XCConfigurationList section */
 	};
